@@ -49,6 +49,7 @@ col_t = pd.Series(list(round(i) for i in range(0, len(values), 1)))
 values['index'] = col_t
 values.set_index('val', inplace=True, drop=True)
 
+values.to_csv('keys.csv')
 lst = list()
 values2 = data_total['val']
 for v in values2:
